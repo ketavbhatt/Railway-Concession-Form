@@ -45,7 +45,7 @@ def hello():
 	AUTH_TOKEN = 'YOUR TWILIO AUTH TOKEN'
 	client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
-	client.messages.create(to = 'NUMBER YOU WANT TO SEND MESSAGE',from_ = 'YOUR TWILIO NUMBER', body = 'Your BODY OF MESSAGE',)
+	client.messages.create(to = 'NUMBER YOU WANT TO SEND MESSAGE',from_ = 'YOUR TWILIO NUMBER', body = 'BODY OF MESSAGE',)
 	return 0
 
 
