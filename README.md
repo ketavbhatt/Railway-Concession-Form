@@ -1,1 +1,1 @@
-"# Railway-Concession-Form" 
+ This is a django project to automate the system of Railway concession in school and colleges to avoid long queues for it.The project consists of student site and admin site.The student can fill the railway form and submit it.The student will get a mail and message when their concession is ready.The admin will be able to see all the form requested and will click a ready button which will send a message and a mail to the student.After which student can collect their concessions.
