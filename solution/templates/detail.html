@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+
+{% load staticfiles %}
+<html lang="en">
+<head>
+{% block content %}
+	<meta charset="utf-8" />
+	<title>Table Style</title>
+	<link href="{% static "css/detail.css" %}" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+<div class="table-title">
+<h3>Current Details</h3>
+</div>
+<table class="table-fill">
+
+<tbody class="table-hover">
+<tr>
+<td class="text-left">Name</td>
+<td class="text-left">{{b.name}}</td>
+</tr>
+<tr>
+<td class="text-left">SAP ID</td>
+<td class="text-left">{{b.sap}}</td>
+</tr>
+<tr>
+<td class="text-left">Department</td>
+<td class="text-left">{{b.department}}</td>
+</tr>
+<tr>
+<td class="text-left">Year</td>
+<td class="text-left">{{b.year}}</td>
+</tr>
+<tr>
+<td class="text-left">Class</td>
+<td class="text-left">{{b.rail_class}}</td>
+</tr>
+<tr>
+<td class="text-left">Source Station</td>
+<td class="text-left">{{b.source}}</td>
+</tr>
+<tr>
+<td class="text-left">Current Status</td>
+<td class="text-left">{{b.status}}</td>
+</tr>
+</tbody>
+</table>
+  
+{% endblock %}
+
+  </body>
+  </html>
